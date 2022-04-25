@@ -88,3 +88,81 @@ console.log(array);
 
 
 
+const productos = [
+    { nombre: 'Cacerola 18', precio: 15000 },
+    { nombre: 'Sarten 24', precio: 26500 },
+    { nombre: 'Sarten 28', precio: 35800 },
+    { nombre: 'Flip', precio: 19000 },
+    { nombre: 'Urban Gril', precio: 33000 },
+]
+const nombres = productos.map( (el) => el.nombre );
+// const nombres = productos.map( (el) => el.precio * 1.25 );
+console.log(nombres);
+
+const actualizado = productos.map( (el) => {
+    return {
+        nombre: el.nombre,
+        precio: el.precio * 1.25
+    }
+} );
+console.log(actualizado);
+
+
+
+function asignarOperacion(op) {
+    if (op == "multiplicar") {
+        return (a, b) => a * b;
+    } else if (op == "dividir") {
+        return (a, b) => a / b;
+    }
+}
+let multi = asignarOperacion("multiplicar");
+let div = asignarOperacion("dividir");
+
+
+console.log( multi (18000, 2) );
+console.log( div (32000, 2) );
+
+
+//Filtro de productos
+const producto = [
+    { nombre: 'Cacerola 18', precio: 15000 },
+    { nombre: 'Cacerola 24', precio: 22000 },
+    { nombre: 'Cacerola 28', precio: 34500 },
+    { nombre: 'Sarten 18', precio: 16000 },
+    { nombre: 'Sarten 24', precio: 26500 },
+    { nombre: 'Sarten 28', precio: 35800 },
+    { nombre: 'Flip', precio: 19000 },
+    { nombre: 'Urban Grill', precio: 33000 },
+]
+const resultado = producto.filter( (el) => el.nombre.includes('28') );
+const resultado2 = producto.filter( (el) => el.precio < 20000 );
+console.log(resultado);
+console.log(resultado2);
+
+
+//Carrito con descuento
+
+let cupon = -8500;
+const miCompra = [
+    { nombre: 'Cacerola 24', precio: 22000 },
+    { nombre: 'Sarten 24', precio: 26500 },
+    { nombre: 'Savarin 24', precio: 12000 }
+]
+const total = miCompra.reduce( (acc, el) => acc + el.precio, cupon )
+console.log(total) // 52000
+
+
+//Carrito de compra
+const miCompra2 = [
+    { nombre: 'Cacerola 18', precio: 15000 },
+    { nombre: 'Flip', precio: 19000 },
+    { nombre: 'Urban Grill', precio: 33000 },
+    { nombre: 'Savarin 18', precio: 10000 },
+    { nombre: 'Pelador de vegetales', precio: 4500 },
+]
+
+const total2 = miCompra2.reduce((acc, el) => acc + el.precio, 0)
+console.log(total2) // 81500
+
+
