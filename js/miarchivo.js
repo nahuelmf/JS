@@ -414,9 +414,40 @@ const pre = {
 localStorage.setItem('pre', JSON.stringify(pre));
 //Obtener valores de Local Storage
 console.log(localStorage.getItem('pre'))
-// "{ id:1, nombre:Cris }" es un string
+
 
 //Eliminar valores de Local Storage
 localStorage.removeItem('pre')
 
 
+const productos = [
+  { id: 1 ,  nombre: "Combo 1", precio: 75000 },
+  {  id: 2 ,  nombre: "Combo 2", precio: 60000 },
+  {  id: 3 ,  nombre: "Combo 3"  , precio: 34000 },
+  {  id: 4 ,  nombre: "Combo 4" , precio: 31000},
+  {  id: 5 ,  nombre: "Combo 5" , precio: 55000},
+  {  id: 6 ,  nombre: "Combo 6" , precio: 60000},
+  {  id: 7 ,  nombre: "Combo 7" , precio: 33000},
+  {  id: 8 ,  nombre: "Combo 8" , precio: 49000 },
+  {  id: 9 ,  nombre: "Combo 9" , precio: 46450},
+  {  id: 10 ,  nombre: "Combo 10" , precio: 57000},
+  {  id: 11 ,  nombre: "Flip" , precio: 43900},
+  {  id: 12 ,  nombre: "Combo 11" , precio: 85200},
+  {  id: 13 ,  nombre: "Cacerola Cuadrada" , precio: 58700},
+  {  id: 14 ,  nombre: "Combo 12" , precio: 96300},
+  {  id: 15 ,  nombre: "Sarten Marsala" , precio: 33300},
+  {  id: 16 ,  nombre: "Urban Grill" , precio: 38000},
+  {  id: 17 ,  nombre: "Sarten Chef" , precio: 19300},
+  {  id: 18 ,  nombre: "Cacerola 18" , precio: 27600},
+  {  id: 19 ,  nombre: "Sarten 24" , precio: 36200},
+                      ];
+
+
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+
+//Almacenar producto por producto
+for (const producto of productos) {
+    guardarLocal(producto.id, JSON.stringify(producto));
+}
+// o almacenar array completo
+guardarLocal("listaProductos", JSON.stringify(productos));
