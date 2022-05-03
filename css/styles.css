@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap');
+
 /*!
 * Start Bootstrap - Shop Homepage v5.0.4 (https://startbootstrap.com/template/shop-homepage)
 * Copyright 2013-2021 Start Bootstrap
@@ -89,6 +91,9 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+header{
+  background:  url("../assets/bc.jpg");
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -110,6 +115,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -146,6 +153,9 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  color: #b02a37;
 }
 
 h6, .h6 {
@@ -155,6 +165,15 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+}
+
+.card-text {
+  color: #b027bd;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;;
+  
 }
 
 abbr[title],
@@ -3001,7 +3020,7 @@ textarea.form-control-lg {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
+    -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: transparent;
@@ -3179,9 +3198,10 @@ textarea.form-control-lg {
 }
 
 .btn-danger {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  color: rgb(248, 248, 248);
+  font-size: 18px;
+  background-color: #ad2836;
+  border-color: #ad2836;
 }
 .btn-danger:hover {
   color: #fff;
@@ -3190,8 +3210,8 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn-danger, .btn-danger:focus {
   color: #fff;
-  background-color: #bb2d3b;
-  border-color: #b02a37;
+  background-color: #e03b4c;
+  border-color: #e03b4c;
   box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
 }
 .btn-check:checked + .btn-danger, .btn-check:active + .btn-danger, .btn-danger:active, .btn-danger.active, .show > .btn-danger.dropdown-toggle {
@@ -3394,11 +3414,11 @@ textarea.form-control-lg {
 }
 
 .btn-outline-danger {
-  color: #dc3545;
-  border-color: #dc3545;
+  color: #810e1a;
+  border-color: #810e1a;
 }
 .btn-outline-danger:hover {
-  color: #fff;
+  color: rgb(25, 9, 83);
   background-color: #dc3545;
   border-color: #dc3545;
 }
@@ -4019,7 +4039,6 @@ textarea.form-control-lg {
 .nav-justified .nav-item .nav-link {
   width: 100%;
 }
-
 .tab-content > .tab-pane {
   display: none;
 }
@@ -7482,7 +7501,7 @@ textarea.form-control-lg {
 
 .py-3 {
   padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .py-4 {
@@ -7491,7 +7510,7 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 8rem !important;
   padding-bottom: 3rem !important;
 }
 
@@ -7761,7 +7780,7 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: black;
 }
 
 .text-body {
@@ -7781,7 +7800,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: black;
 }
 
 .text-reset {
@@ -7836,13 +7855,13 @@ textarea.form-control-lg {
 }
 
 .bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #fafafa !important;
+  opacity: 0.8  ;
 }
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #565e64 !important;
 }
 
 .bg-black {
