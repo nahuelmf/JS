@@ -92,6 +92,7 @@ body {
 }
 
 header{
+  height: 600px;
   background:  url("../assets/bc.jpg");
 }
 hr {
@@ -116,7 +117,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
   font-family: 'Oswald', sans-serif;
-font-family: 'Quicksand', sans-serif;
+margin-top: 100px;
+
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -175,6 +177,17 @@ font-family: 'Oswald', sans-serif;
   font-family: 'Oswald', sans-serif;;
   
 }
+
+.scrol{	
+  height: 200px ;
+	width: auto;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+
+
+
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -3029,6 +3042,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {

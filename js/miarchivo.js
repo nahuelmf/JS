@@ -209,6 +209,11 @@ boton.onclick = () => {console.log("Añadir al carrito")}
 boton.onmousemove = () => {console.log("Move")}
 */
 
+
+
+
+
+
     const baseDeDatos = [
     { id: 1 ,  nombre: "Combo 1", precio: 75000 , imagen: 'assets/juego1.jpeg', descripcion: "Cacerola de 18, Cacerola Cuadrada 24 y Bowls de acero."},
     {  id: 2 ,  nombre: "Combo 2", precio: 60000 , imagen: 'assets/juego2.jpeg', descripcion:"Cacerola Cuadrada de 29, Cacerola Cuadrada de 24 y Utensillos de cocina."},
@@ -443,6 +448,8 @@ const productos = [
                       ];
 
 
+
+
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 
 //Almacenar producto por producto
@@ -451,3 +458,55 @@ for (const producto of productos) {
 }
 // o almacenar array completo
 guardarLocal("listaProductos", JSON.stringify(productos));
+
+
+
+//operador logico and
+
+const carrito1 = []
+
+carrito1.length === 0 && console.log("El carrito está vacío!")
+
+//Desestructuracion
+
+const datos = { id:1, nombre: "Combo 1", descripcion: "Cacerola de 18, Cacerola Cuadrada 24 y Bowls de acero."}
+
+const { id, nombre, descripcion  } = datos
+console.log(id)
+console.log(nombre)
+console.log(descripcion)
+
+//Desestructuración de arrays
+
+const sarten = [18, 20, 24, 28]
+
+const [a, b] = sarten
+
+console.log(a) // 18
+console.log(b) // 20
+
+
+//SPREAD DE ARRAYS
+
+
+const cacerola = [18 ,20 , 24, 29, ]
+
+// spread ... del array
+console.log(...cacerola) // 18 20 24 29
+
+
+const combo1 = ["Cacerola de 18, Cacerola Cuadrada 24 y Bowls de acero."]
+const combo2 = ["Cacerola Cuadrada de 29, Cacerola Cuadrada de 24 y Utensillos de cocina."]
+
+// spread de los dos arrays dentro de otro
+const combos = [...combo1, ...combo2]
+
+console.log(combos) 
+
+// spread del array en un objeto
+const combosObj = {
+    ...combos
+}
+
+console.log(combosObj)
+
