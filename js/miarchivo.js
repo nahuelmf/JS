@@ -392,7 +392,7 @@ localStorage.setItem('product', 'Flip');
 
 let precio = localStorage.getItem('precio');
 let product = localStorage.getItem('product');
-console.log(product, precio); // Paquita Salas 50
+console.log(product, precio); 
 
 
 
@@ -510,3 +510,19 @@ const combosObj = {
 
 console.log(combosObj)
 
+
+
+
+Swal.fire({
+  title: 'Bienvenidos! Estan a un solo paso de cambiar tu forma de cocinar.',
+  width: 600,
+  padding: '3em',
+  color: '#8D3669',
+  background: '#fff url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/89/64/6357d9624e3b1d1.JPG)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("https://media4.giphy.com/media/2VyVK0GKTciqAqLLSu/giphy.gif")
+    left top
+    no-repeat
+  `
+})
