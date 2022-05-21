@@ -1,0 +1,22 @@
+
+[
+    { "id": 1 ,  "nombre": "Combo 1", "precio": 75000 , "descripcion": "Cacerola de 18, Cacerola Cuadrada 24 y Bowls de acero."},
+    {  "id": 2 ,  "nombre": "Combo 2", "precio": 60000 , "descripcion":"Cacerola Cuadrada de 29, Cacerola Cuadrada de 24 y Utensillos de cocina."},
+    {  "id": 3 ,  "nombre": "Combo 3"  , "precio": 34000 , "descripcion":"Paellera 28 y Utensillos de cocina."},
+    {  "id": 4 ,  "nombre": "Combo 4" , "precio": 31000, "descripcion": "Sarten de 24 y Sarten de 28"},
+    {  "id": 5 ,  "nombre": "Combo 5" , "precio": 55000, "descripcion": "Sartén 24cm, Cacerola 24cm y Savarin"},
+    {  "id": 6 ,  "nombre": "Combo 6" , "precio": 60000, "descripcion": "Paellera y Flip"},
+    {  "id": 7 ,  "nombre": "Combo 7" , "precio": 33000,  "descripcion": "Sarten sensor 24cm y wok sensor 30cm"},
+    {  "id": 8 ,  "nombre": "Combo 8" , "precio": 49000 , "descripcion": "Cacerola cuadrada 29cm y Budineras."},
+    {  "id": 9 ,  "nombre": "Combo 9" , "precio": 46450 , "descripcion": "Cacerola Marsala 24cm y Savarin 24cm."},
+    {  "id": 10 ,  "nombre": "Combo 10" , "precio": 57000 , "descripcion": "Cacerola rectangular y Cacerola 18cm."},
+    {  "id": 11 ,  "nombre": "Flip" , "precio": 43900 , "descripcion": "Flip"},
+    {  "id": 12 ,  "nombre": "Combo 11" , "precio": 85200 , "descripcion": "Sarten C/ASAS 31cm, Flip y aros de Silicona."},
+    {  "id": 13 ,  "nombre": "Cacerola Cuadrada" , "precio": 58700 , "descripcion": "Cacerola cuadrada 29cm."},
+    {  "id": 14 ,  "nombre": "Combo 12" , "precio": 96300 , "descripcion": "Cacerola 18cm, Carrola 20cm y Cacerola 24cm."},
+    {  "id": 15 ,  "nombre": "Sarten Marsala" , "precio": 33300 , "descripcion": "Sarten Marsala 24cm."},
+    {  "id": 16 ,  "nombre": "Urban Grill" , "precio": 38000 ,  "descripcion": "Urban Grill."},
+    {  "id": 17 ,  "nombre": "Sarten Chef" , "precio": 19300 ,  "descripcion": "Sarten Chef."},
+    {  "id": 18 ,  "nombre": "Cacerola 18" , "precio": 27600 , "descripcion": "Cacerola 18cm."},
+    {  "id": 19 ,  "nombre": "Sarten 24" , "precio": 36200 , "descripcion": "Sarten 24cm."}
+                        ]
