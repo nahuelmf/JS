@@ -512,7 +512,6 @@ console.log(combosObj)
 
 
 
-
 Swal.fire({
   title: 'Bienvenidos! Estan a un solo paso de cambiar tu forma de cocinar.',
   width: 600,
